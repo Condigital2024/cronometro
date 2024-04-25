@@ -1,10 +1,10 @@
-simplyCoundown('[CSS-SELECTOR]', {
+simplyCoundown('#cuenta', {
     year: 2024,
     month: 4,
     day: 31,
     hours: 0,
     minutes: 0,
-    seconds: 0,
+    seconds: 20,
     words:{ 
         days: 'dia',
         hours: 'hora',

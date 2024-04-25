@@ -1,20 +1,20 @@
-simplyCoundown('#cuenta', {
+simplyCountdown('#cuenta', {
     year: 2024,
     month: 4,
-    day: 31,
+    day: 25,
     hours: 0,
     minutes: 0,
-    seconds: 20,
+    seconds: 10,
     words:{ 
         days: 'dia',
         hours: 'hora',
-        minutes: 'minute',
-        seconds: 'second',
+        minutes: 'minuto',
+        seconds: 'segundo',
         pluralLetter: 's'
     },
     plural: true,
     inline: false,
-    inlineClass: 'simply-coundown-inline',
+    inlineClass: 'simply-countdown-inline',
     enableUtc: true,
     onend: function() {return;},
     refresh: 1000,
@@ -26,7 +26,7 @@ simplyCoundown('#cuenta', {
 
 });
 let myElement = document.querySelector('.my-countdow');
-simplyCoundown(myElement, {});
+simplyCountdown(myElement, {});
 
 let multipleElements = document.querySelectorAll('.my-countdow');
-simplyCoundown(multipleElements, {});
+simplyCountdown(multipleElements, {});

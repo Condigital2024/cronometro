@@ -2,31 +2,30 @@ simplyCountdown('#cuenta', {
     year: 2024,
     month: 4,
     day: 25,
-    hours: 0,
-    minutes: 0,
-    seconds: 10,
+    hours: 14,
+    minutes: 19,
+    seconds: 0,
     words:{ 
-        days: 'dia',
-        hours: 'hora',
-        minutes: 'minuto',
-        seconds: 'segundo',
-        pluralLetter: 's'
+
+        days: 'Dia',
+		hours: 'Hora',
+		minutes: 'Minuto',
+		seconds: 'Segundo',
+		pluralLetter: 's'
     },
     plural: true,
     inline: false,
     inlineClass: 'simply-countdown-inline',
-    enableUtc: true,
-    onend: function() {return;},
+    enableUtc: false,
+    onend: function() {
+		document.getElementById('portada').classList.add('oculta');
+		return; 
+	},
     refresh: 1000,
     sectionClass: 'simply-section',
     amountClass: 'simply-amount',
     wordClass:'simply-word',
     zeroPad: false,
-    countUp: false,
+    countUp: false
 
 });
-let myElement = document.querySelector('.my-countdow');
-simplyCountdown(myElement, {});
-
-let multipleElements = document.querySelectorAll('.my-countdow');
-simplyCountdown(multipleElements, {});

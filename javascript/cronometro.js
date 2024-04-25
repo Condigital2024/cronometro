@@ -3,7 +3,7 @@ simplyCountdown('#cuenta', {
     month: 4,
     day: 25,
     hours: 14,
-    minutes: 19,
+    minutes: 32,
     seconds: 0,
     words:{ 
 
@@ -17,7 +17,7 @@ simplyCountdown('#cuenta', {
     inline: false,
     inlineClass: 'simply-countdown-inline',
     enableUtc: false,
-    onend: function() {
+    onEnd: function() {
 		document.getElementById('portada').classList.add('oculta');
 		return; 
 	},
@@ -29,3 +29,4 @@ simplyCountdown('#cuenta', {
     countUp: false
 
 });
+

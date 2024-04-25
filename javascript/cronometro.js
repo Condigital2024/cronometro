@@ -2,15 +2,11 @@ simplyCountdown('#cuenta', {
     year: 2024,
     month: 4,
     day: 25,
-    hours: 14,
-    minutes: 32,
+    hours: 16,
+    minutes: 15,
     seconds: 0,
     words:{ 
 
-        days: 'Dia',
-		hours: 'Hora',
-		minutes: 'Minuto',
-		seconds: 'Segundo',
 		pluralLetter: 's'
     },
     plural: true,

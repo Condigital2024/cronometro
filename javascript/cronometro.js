@@ -4,8 +4,13 @@ function countdown() {
   
     // Set the target date and time for tomorrow at 4 PM
     const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() ); // Move to tomorrow
-    tomorrow.setHours(9, 59, 0, 0); // Set time to 4 PM (hours, minutes, seconds, milliseconds)
+    // Move to tomorrow
+    tomorrow.setHours(12, 6, 0, 0);
+    if (now >= tomorrow){
+        tomorrow.setDate(tomorrow.getDate() + 1);
+    }
+    
+    // Set time to 4 PM (hours, minutes, seconds, milliseconds)
   
     // Calculate the time difference in milliseconds
     const timeDiff = tomorrow.getTime() - now.getTime();
@@ -29,11 +34,19 @@ function countdown() {
     // Schedule the next countdown update
     setTimeout(countdown, 1000); // Update every second
   
-    // Check if 10 minutes are left before the end (optional)
-    if (timeDiff <= 10 * 60 * 1000) {
-      // Show the countdown on portada (replace with your actual logic)
-      document.getElementById('portada').classList.remove('oculta');
-    }
+    const isLessthan10Minutes = timeDiff < (1000 * 60 * 10);
+
+  // Update the display based on time difference
+    if (isLessthan10Minutes) {
+    // Show portada and hide oculta
+        document.getElementById('portada').classList.remove('oculta');
+
+    } else {
+    // Hide portada and show oculta
+        document.getElementById('portada').style.display = 'none';
+    
+  }
+
     
   }
   
@@ -47,7 +60,7 @@ function countdown() {
   function resetCountdown() {
     // Reset the target date and time for tomorrow at 4 PM
     const tomorrow = new Date();
-    tomorrow.setDate(tomorrow.getDate() + 1);
+    tomorrow.setDate(tomorrow.getDate() );
     tomorrow.setHours(16, 0, 0, 0);
   
     // Reset the countdown display (optional)
@@ -57,5 +70,5 @@ function countdown() {
     countdown();
   }
   
-  setInterval(resetCountdown, 1000 * 60 * 60 * 24); // Execute every 24 hours
+  //setInterval(resetCountdown, 1000 * 60 * 60 * 24); // Execute every 24 hours
   

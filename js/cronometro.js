@@ -15,26 +15,21 @@ function countdown() {
     const formattedSeconds = seconds ? `${seconds.toString().padStart(2, '0')}` : '00';
     const countdownDisplay = document.getElementById('cuenta');
     countdownDisplay.textContent = ` ${formattedHours} : ${formattedMinutes} : ${formattedSeconds}`;
-  
     setTimeout(countdown, 1000); 
     const isLessthan10Minutes = timeDiff < ( 1000 *60 * 60 * 20);
-
     if (isLessthan10Minutes) {
         document.getElementById('tempo').classList.remove('oculta');
-
     } else {
         document.getElementById('tempo').style.display = 'none';
   }
   }
   const countdownDisplay = document.getElementById('tempo');
   countdown();
-  
   function resetCountdown() {
     const tomorrow = new Date();
     tomorrow.setDate(tomorrow.getDate() );
     tomorrow.setHours(16, 0, 0, 0);
     countdownDisplay.textContent = '';
-  
     countdown();
   }
   

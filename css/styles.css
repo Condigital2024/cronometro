@@ -28,8 +28,11 @@ body {
     text-align: center;
     transition: .5s ease-out all;
 }
-.portada.oculta{
-    transform: translateY(288%);
+.oculta{
+    display: block;
+}
+.mostrar_imagen{
+    display: block;
 }
 .portada.header {
     margin-bottom: 100px;

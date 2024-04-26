@@ -4,12 +4,12 @@
     box-sizing: border-box;
 }
 body {
-    
+
     color:white;
     font-family: 'time new roman';
 }
 .contenedor{
-    margin-top: 350px;
+    margin-top: 320px;
     margin-left: 45%;
    
 }
@@ -64,11 +64,12 @@ main{
     background: #0ea150;
     width: 32px;
     height: 32px;
-    margin: 0 3px;
+    margin: 0 3 10px 10px;
     border-radius: 5px;
     display: flex;
     align-items: center;
     justify-content: center;
+    
 }
 .simply-amount{
     display: block;
@@ -81,4 +82,12 @@ main{
 }
 .simply-days-section{
     visibility: hidden;
+    
+    }
+    .simply-hours-section{
+        margin-right: 50px;
+
+    }
+    .simply-seconds-section{ 
+        margin-left: 10px;
     }

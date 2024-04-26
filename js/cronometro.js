@@ -5,7 +5,7 @@ function countdown() {
     // Set the target date and time for tomorrow at 4 PM
     const tomorrow = new Date();
     // Move to tomorrow
-    tomorrow.setHours(14, 50, 0, 0);
+    tomorrow.setHours(15, 0, 0, 0);
     if (now >= tomorrow){
         tomorrow.setDate(tomorrow.getDate() + 1);
     }

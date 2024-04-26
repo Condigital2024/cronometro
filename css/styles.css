@@ -15,9 +15,9 @@ body {
 }
 .portada {
     width: 128px;
+    height: 128px;
     margin-top: 350px;
     background:#59227e;
-    height: 128px;
     top: 0;
     left: 45%;
     position: fixed;
@@ -37,12 +37,13 @@ body {
     letter-spacing: 3px;
 } 
 .portada .header .logotipo {
-    font-size: 50px;
+    margin-top: 90px;
+    font-size: 33px;
     font-size: 900;
     margin-bottom: 20px;
 }
 .portada .header .mensaje {
-    font-size: 30px;
+    font-size: 40px;
     font-weight: 600;
 }
 main{
@@ -56,38 +57,8 @@ main{
 }
 
 #cuenta{
+    font-size: 25px;
     display: flex;
     justify-content: center;
     margin-bottom: 100px;
 }
-.simply-section {
-    background: #0ea150;
-    width: 32px;
-    height: 32px;
-    margin: 0 3 10px 10px;
-    border-radius: 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.simply-amount{
-    display: block;
-    font-size: 6px;
-    font-weight: 700;
-}
-.simply-word{
-    font-weight: 30px;
-    font-size: 10px;
-}
-/* .simply-days-section{
-    visibility: hidden;
-    
-    } */
-    .simply-hours-section{
-        margin-right: 50px;
-
-    }
-    .simply-seconds-section{ 
-        margin-left: 10px;
-    }

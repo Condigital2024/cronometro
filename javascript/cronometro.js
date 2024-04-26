@@ -5,7 +5,7 @@ function countdown() {
     // Set the target date and time for tomorrow at 4 PM
     const tomorrow = new Date();
     // Move to tomorrow
-    tomorrow.setHours(12, 6, 0, 0);
+    tomorrow.setHours(12, 22, 0, 0);
     if (now >= tomorrow){
         tomorrow.setDate(tomorrow.getDate() + 1);
     }
@@ -29,12 +29,12 @@ function countdown() {
   
     // Update the countdown display
     const countdownDisplay = document.getElementById('cuenta');
-    countdownDisplay.textContent = `${formattedDays}d ${formattedHours}h ${formattedMinutes}m ${formattedSeconds}s`;
+    countdownDisplay.textContent = ` ${formattedHours} : ${formattedMinutes} : ${formattedSeconds}`;
   
     // Schedule the next countdown update
     setTimeout(countdown, 1000); // Update every second
   
-    const isLessthan10Minutes = timeDiff < (1000 * 60 * 10);
+    const isLessthan10Minutes = timeDiff < ( 1000*60 * 10);
 
   // Update the display based on time difference
     if (isLessthan10Minutes) {

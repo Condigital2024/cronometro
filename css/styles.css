@@ -11,57 +11,27 @@ body {
 .contenedor{
     margin-top: 320px;
     margin-left: 45%;
-   
 }
 .portada {
     width: 128px;
     height: 128px;
     margin-top: 350px;
     background:#59227e;
-    top: 0;
-    left: 45%;
-    position: fixed;
-    display: flex;
-    flex-direction: column;
+    background-image: url("../img/Cuatro.jpg"); 
+    display: block;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin: 300px auto;
+}
+#tempo{
+    display: block;
+    font-size: 25px;
+    justify-content: center;
+    background-color: #59227e;
+    height: 128px;
     transition: .5s ease-out all;
 }
-.oculta{
-    display: block;
-}
-.mostrar_imagen{
-    display: block;
-}
-.portada.header {
-    margin-bottom: 100px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-} 
-.portada .header .logotipo {
-    margin-top: 90px;
+.time {
     font-size: 33px;
-    font-size: 900;
-    margin-bottom: 20px;
-}
-.portada .header .mensaje {
-    font-size: 40px;
-    font-weight: 600;
-}
-main{
-    max-width: 1000px;
-    margin: auto;
-    width: 90%;
-    padding: 20px 0;
-    font-size: 2px;
-    line-height: 28px;
-    text-align: left;
-}
-
-#cuenta{
-    font-size: 25px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 100px;
 }

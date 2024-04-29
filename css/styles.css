@@ -5,7 +5,7 @@
 }
 
 body {
-    background:#59227e;
+    background:#5f2872;
     color:white;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 
@@ -14,7 +14,7 @@ body {
 .portada {
     width: 128px;
     height: 128px;
-    background:#59227e;
+    background:#5f2872;
     background-image: url("../img/Cuatro.jpg"); 
     display: block;
     align-items: center;
@@ -26,7 +26,7 @@ body {
     display: block;
     font-size: 20px;
     justify-content: center;
-    background-color: #59227e;
+    background-color: #5f2872;
     height: 128px;
     transition: .5s ease-out all;
     position: relative;

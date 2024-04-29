@@ -16,7 +16,8 @@ body {
     display: block;
     align-items: left;
     justify-content: left;
-    text-align: left;
+    text-align: center;
+    margin-top: 50px;
 }
 #tempo{
     display: block;

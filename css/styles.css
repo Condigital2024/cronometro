@@ -8,21 +8,15 @@ body {
     color:white;
     font-family: 'time new roman';
 }
-.contenedor{
-    margin-top: 320px;
-    margin-left: 45%;
-}
 .portada {
     width: 128px;
     height: 128px;
-    margin-top: 350px;
     background:#59227e;
     background-image: url("../img/Cuatro.jpg"); 
     display: block;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    margin: 300px auto;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
 }
 #tempo{
     display: block;

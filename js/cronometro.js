@@ -1,7 +1,7 @@
 function countdown() {
     const now = new Date();
     const tomorrow = new Date();
-    tomorrow.setHours(12, 45, 0, 0);
+    tomorrow.setHours(2, 25, 0, 0);
     if (now >= tomorrow){
         tomorrow.setDate(tomorrow.getDate() + 1);
     }

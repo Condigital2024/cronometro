@@ -3,11 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
+
 body {
     background:#59227e;
     color:white;
-    font-family: 'time new roman';
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
 }
+
 .portada {
     width: 128px;
     height: 128px;
@@ -21,7 +24,7 @@ body {
 }   
 #tempo{
     display: block;
-    font-size: 25px;
+    font-size: 20px;
     justify-content: center;
     background-color: #59227e;
     height: 128px;
@@ -30,7 +33,7 @@ body {
     padding-top: 20px;
 }
 .time {
-    font-size: 33px;
+    font-size: 31px;
     
 }
 .letras {
